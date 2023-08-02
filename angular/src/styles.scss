@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+/* Imports */
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+/* Overall */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* App defined colors */
+:root {
+  --top-nav-color: #bdafaf;
+  --main-button-color: #1a77a9;
+  --main-button-color-icon: white;
+}
+
+body {
+  font-family: Roboto, serif;
+}
+
+.pi {
+  padding: 10px;
+  font-size: 24px !important;
+}
+
+h4 {
+  text-align: center;
+}
+
+.button-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-error {
+  text-align: left;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: var(--main-button-color);
+  --mdc-protected-button-label-text-color: #fff;
+}
+
+.mdc-text-field .mdc-text-field__input {
+  caret-color: var(--main-button-color);
+}
+
+.mat-primary .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+  color: var(--main-button-color) !important;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--main-button-color) !important;
+}
+
+.mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background {
+  border-color: var(--main-button-color) !important;
+  background-color: var(--main-button-color) !important;
+}
+
+::ng-deep .mdc-text-field .mdc-text-field__input {
+  border-color: var(--main-button-color) !important;
+}
+
+.mdc-text-field--filled .mdc-line-ripple:after {
+  border-color: var(--main-button-color) !important;
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: var(--main-button-color) !important;
+}
